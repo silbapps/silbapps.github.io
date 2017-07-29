@@ -85,7 +85,7 @@ NomeMesWMOnline[9] = "outubro"
 NomeMesWMOnline[10] = "novembro"
 NomeMesWMOnline[11] = "dezembro"
 document.getElementById('s8-time-date-weather').innerHTML= h + "h" + m + " " + NomeDiaWMOnline[dias] + ", " + dia + " de " + NomeMesWMOnline[mes] + " de "+ ano + " " + cidade +"," + estado +" " +  temperatura +"ºC";	
-						var init = setTimeout( 'loadWeather(location, woeid)', 1000 ), cT = new Date(),h   = cT.getHours(),m = cT.getMinutes(),s = cT.getSeconds();
+						var inic = setTimeout( 'loadWeather(location, woeid)', 1000 ), cT = new Date(),h   = cT.getHours(),m = cT.getMinutes(),s = cT.getSeconds();
 						(h < 10) ? h = "0" + h : ''; (m < 10) ? m = "0" + m :'' ; (s < 10) ? s = "0" + s :'' ;
 						document.getElementById('s8-time-date-weather').innerHTML= h + ":" + m + " " + NomeDiaWMOnline[dias] + ", " + dia + " de " + NomeMesWMOnline[mes] + " de " + ano + " " + cidade +"," + estado +" " +  temperatura +"ºC";
       
